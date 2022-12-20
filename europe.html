@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WorldMap</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Rubik+Mono+One&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="dist/css/main.min.css" />
+		<script
+			src="https://kit.fontawesome.com/a8199a168e.js"
+			crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<nav class="nav-section">
+	<a href="#" onclick="history.back();"
+		><button class="nav-section__prev-btn">
+			<i class="fa-solid fa-arrow-left"></i></button
+	></a>
+	<a href="index.html"
+		><button class="nav-section__home-btn">
+			<i class="fa-solid fa-house"></i></button
+	></a>
+</nav>
+
+			<div class="main-box">
+				<section class="pick-visited-countries">
+					<h3 class="pick-visited-countries__header">
+						Pick countries you have visited:
+					</h3>
+					<div
+						class="pick-visited-countries__checkbox-box pick-visited-countries__checkbox-box--europe">
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Albania" />
+							<span class="pick-visited-countries__country">Albania</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Andora" />
+							<span class="pick-visited-countries__country">Andora</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Armenia" />
+							<span class="pick-visited-countries__country">Armenia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Austria" />
+							<span class="pick-visited-countries__country">Austria</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Azerbaijan" />
+							<span class="pick-visited-countries__country">Azerbaijan</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Belarus" />
+							<span class="pick-visited-countries__country">Belarus</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Belgium" />
+							<span class="pick-visited-countries__country">Belgium</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Bosnia and Herzegovina" />
+							<span class="pick-visited-countries__country"
+								>Bosnia and Herzegovina</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Bulgaria" />
+							<span class="pick-visited-countries__country">Bulgaria</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Croatia" />
+							<span class="pick-visited-countries__country">Croatia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Cyprus" />
+							<span class="pick-visited-countries__country">Cyprus</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Czech Republic" />
+							<span class="pick-visited-countries__country"
+								>Czech Republic</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Denmark" />
+							<span class="pick-visited-countries__country">Denmark</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Estonia" />
+							<span class="pick-visited-countries__country">Estonia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Finland" />
+							<span class="pick-visited-countries__country">Finland</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="France" />
+							<span class="pick-visited-countries__country">France</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Georgia" />
+							<span class="pick-visited-countries__country">Georgia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Germany" />
+							<span class="pick-visited-countries__country">Germany</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Greece" />
+							<span class="pick-visited-countries__country">Greece</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="HUngary" />
+							<span class="pick-visited-countries__country">Hungary</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Iceland" />
+							<span class="pick-visited-countries__country">Iceland</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Ireland" />
+							<span class="pick-visited-countries__country">Ireland</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Italy" />
+							<span class="pick-visited-countries__country">Italy</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Kazakhstan" />
+							<span class="pick-visited-countries__country">Kazakhstan</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Kosovo" />
+							<span class="pick-visited-countries__country">Kosovo</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Latvia" />
+							<span class="pick-visited-countries__country">Latvia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Liechtenstein" />
+							<span class="pick-visited-countries__country">Liechtenstein</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Lithuania" />
+							<span class="pick-visited-countries__country">Lithuania</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Luxembourg" />
+							<span class="pick-visited-countries__country">Luxembourg</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Malta" />
+							<span class="pick-visited-countries__country">Malta</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Moldova" />
+							<span class="pick-visited-countries__country">Moldova</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Monaco" />
+							<span class="pick-visited-countries__country">Monaco</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Montenegro" />
+							<span class="pick-visited-countries__country">Montenegro</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Netherlands" />
+							<span class="pick-visited-countries__country">Netherlands</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="North Macedonia" />
+							<span class="pick-visited-countries__country"
+								>North Macedonia</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Norway" />
+							<span class="pick-visited-countries__country">Norway</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Poland" />
+							<span class="pick-visited-countries__country">Poland</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Portugal" />
+							<span class="pick-visited-countries__country">Portugal</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Romania" />
+							<span class="pick-visited-countries__country">Romania</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Russia" />
+							<span class="pick-visited-countries__country">Russia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="San Marino" />
+							<span class="pick-visited-countries__country">San Marino</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Serbia" />
+							<span class="pick-visited-countries__country">Serbia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Slovakia" />
+							<span class="pick-visited-countries__country">Slovakia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Slovenia" />
+							<span class="pick-visited-countries__country">Slovenia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Spain" />
+							<span class="pick-visited-countries__country">Spain</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Sweden" />
+							<span class="pick-visited-countries__country">Sweden</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Switzerland" />
+							<span class="pick-visited-countries__country">Switzerland</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Turkey" />
+							<span class="pick-visited-countries__country">Turkey</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Ukraine" />
+							<span class="pick-visited-countries__country">Ukraine</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="United Kingdom" />
+
+							<span class="pick-visited-countries__country"
+								>United Kingdom</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--europe">
+							<input
+								type="checkbox"
+								name="europe-country"
+								class="pick-visited-countries__checkbox"
+								value="Vatican City"
+								onclick="checkCountries()" />
+							<span class="pick-visited-countries__country">Vatican City</span>
+						</div>
+					</div>
+				</section>
+				<section class="visited-countries">
+					<p class="visited-countries__summary">
+						  So far you have visited
+						<span
+							class="visited-countries__percentage visited-countries__percentage--europe"
+							>0%</span
+						>
+						of European countries.
+					</p>
+				</section>
+				<section class="countries-wishlist">
+					<p class="countries-wishlist__paragraph">
+						What country would you like to visit next?
+					</p>
+					<input
+						type="text"
+						class="countries-wishlist__input countries-wishlist__input--europe" />
+					<p class="countries-wishlist__error-text">Write correct country</p>
+					<button
+						class="countries-wishlist__btn countries-wishlist__btn--europe">
+						Add to wishlist
+					</button>
+					<div
+						class="countries-wishlist__list countries-wishlist__list--europe"></div>
+				</section>
+			</div>
+		</div>
+		<script src="dist/js/continents.min.js"></script>
+	</body>
+</html>

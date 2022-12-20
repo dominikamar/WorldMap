@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WorldMap</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Rubik+Mono+One&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="dist/css/main.min.css" />
+		<script
+			src="https://kit.fontawesome.com/a8199a168e.js"
+			crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<nav class="nav-section">
+	<a href="#" onclick="history.back();"
+		><button class="nav-section__prev-btn">
+			<i class="fa-solid fa-arrow-left"></i></button
+	></a>
+	<a href="index.html"
+		><button class="nav-section__home-btn">
+			<i class="fa-solid fa-house"></i></button
+	></a>
+</nav>
+
+			<div class="main-box">
+				<section class="pick-visited-countries">
+					<h3 class="pick-visited-countries__header">
+						Pick countries you have visited:
+					</h3>
+					<div
+						class="pick-visited-countries__checkbox-box pick-visited-countries__checkbox-box--asia">
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Afghanistan" />
+							<span class="pick-visited-countries__country">Afghanistan</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Armenia" />
+							<span class="pick-visited-countries__country">Armenia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Azerbaijan" />
+							<span class="pick-visited-countries__country">Azerbaijan</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Bahrain" />
+							<span class="pick-visited-countries__country">Bahrain</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Bangladesh" />
+							<span class="pick-visited-countries__country">Bangladesh</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Bhutan" />
+							<span class="pick-visited-countries__country">Bhutan</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Brunei" />
+							<span class="pick-visited-countries__country">Brunei</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Cambodia" />
+							<span class="pick-visited-countries__country">Cambodia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="China" />
+							<span class="pick-visited-countries__country">China</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Georgia" />
+							<span class="pick-visited-countries__country">Georgia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="India" />
+							<span class="pick-visited-countries__country">India</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Indonesia" />
+							<span class="pick-visited-countries__country">Indonesia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Iran" />
+							<span class="pick-visited-countries__country">Iran</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Iraq" />
+							<span class="pick-visited-countries__country">Iraq</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Israel" />
+							<span class="pick-visited-countries__country">Israel</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Japan" />
+							<span class="pick-visited-countries__country">Japan</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Jordan" />
+							<span class="pick-visited-countries__country">Jordan</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Kazakhstan" />
+							<span class="pick-visited-countries__country">Kazakhstan</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Kuwait" />
+							<span class="pick-visited-countries__country">Kuwait</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Kyrgyzstan" />
+							<span class="pick-visited-countries__country">Kyrgyzstan</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Laos" />
+							<span class="pick-visited-countries__country">Laos</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Lebanon" />
+							<span class="pick-visited-countries__country">Lebanon</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Malaysia" />
+							<span class="pick-visited-countries__country">Malaysia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Maldives" />
+							<span class="pick-visited-countries__country">Maldives</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Mongolia" />
+							<span class="pick-visited-countries__country">Mongolia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Myanmar" />
+							<span class="pick-visited-countries__country">Myanmar</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Nepal" />
+							<span class="pick-visited-countries__country">Nepal</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="North Korea" />
+							<span class="pick-visited-countries__country">North Korea</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Oman" />
+							<span class="pick-visited-countries__country">Oman</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Pakistan" />
+							<span class="pick-visited-countries__country">Pakistan</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Palestine" />
+							<span class="pick-visited-countries__country">Palestine</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Philippines" />
+							<span class="pick-visited-countries__country">Philippines</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Qatar" />
+							<span class="pick-visited-countries__country">Qatar</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Russia" />
+							<span class="pick-visited-countries__country">Russia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Saudi Arabia" />
+							<span class="pick-visited-countries__country">Saudi Arabia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Singapore" />
+							<span class="pick-visited-countries__country">Singapore</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="South Korea" />
+							<span class="pick-visited-countries__country">South Korea</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Sri Lanka" />
+							<span class="pick-visited-countries__country">Sri Lanka</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Syria" />
+							<span class="pick-visited-countries__country">Syria</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Taiwan" />
+							<span class="pick-visited-countries__country">Taiwan</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Tajikistan" />
+							<span class="pick-visited-countries__country">Tajikistan</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Thailand" />
+							<span class="pick-visited-countries__country">Thailand</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Timor-Leste" />
+							<span class="pick-visited-countries__country">Timor-Leste</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Turkey" />
+							<span class="pick-visited-countries__country">Turkey</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Turkmenistan" />
+							<span class="pick-visited-countries__country">Turkmenistan</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="United Arab Emirates" />
+							<span class="pick-visited-countries__country"
+								>United Arab Emirates</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Uzbekistan" />
+							<span class="pick-visited-countries__country">Uzbekistan</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Vietnam" />
+							<span class="pick-visited-countries__country">Vietnam</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--asia">
+							<input
+								type="checkbox"
+								name="asia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Yemen" />
+							<span class="pick-visited-countries__country">Yemen</span>
+						</div>
+					</div>
+				</section>
+				<section class="visited-countries">
+					<p class="visited-countries__summary">
+						So far you have visited
+						<span
+							class="visited-countries__percentage visited-countries__percentage--asia"
+							>0%</span
+						>
+						of Asian countries.
+					</p>
+				</section>
+				<section class="countries-wishlist">
+					<p class="countries-wishlist__paragraph">
+						What country would you like to visit next?
+					</p>
+					<input
+						type="text"
+						class="countries-wishlist__input countries-wishlist__input--asia" />
+					<p class="countries-wishlist__error-text">Write correct country</p>
+					<button class="countries-wishlist__btn countries-wishlist__btn--asia">
+						Add to wishlist
+					</button>
+					<div
+						class="countries-wishlist__list countries-wishlist__list--asia"></div>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/js/continents.min.js"></script>
+	</body>
+</html>

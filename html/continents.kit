@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WorldMap</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Rubik+Mono+One&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="dist/css/main.min.css" />
+		<script
+			src="https://kit.fontawesome.com/a8199a168e.js"
+			crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<!--@include "nav.kit"-->
+			<section class="greeting-section">
+				<h2 class="greeting-section__header">Hello!</h2>
+				<!-- <p class="greeting-section__sum-up-paragraph">
+					So far you have visited
+					<span class="greeting-section__countries-percentage">0%</span>
+					of all countries.
+				</p> -->
+			</section>
+			<section class="continent-pick">
+				<h3 class="continent-pick__header">
+					Choose the continent to make changes:
+				</h3>
+				<div class="continent-pick__continent-box">
+					<div class="continent-pick__single-continent">
+						<img
+							src="dist/img/europe contour.png"
+							alt="contour map of Europe"
+							class="continent-pick__contour continent-pick__contour--europe" />
+						<a href="europe.html"
+							><button class="continent-pick__btn continent-pick__btn--europe">
+								Europe
+							</button></a
+						>
+					</div>
+					<div class="continent-pick__single-continent">
+						<img
+							src="dist/img/asia contour.png"
+							alt="contour map of Asia"
+							class="continent-pick__contour continent-pick__contour--asia" />
+						<a href="asia.html"
+							><button class="continent-pick__btn continent-pick__btn--asia">
+								Asia
+							</button></a
+						>
+					</div>
+					<div class="continent-pick__single-continent">
+						<img
+							src="dist/img/africa contour.png"
+							alt="contour map of Africa"
+							class="continent-pick__contour continent-pick__contour--africa" />
+						<a href="africa.html"
+							><button class="continent-pick__btn continent-pick__btn--africa">
+								Africa
+							</button></a
+						>
+					</div>
+					<div class="continent-pick__single-continent">
+						<img
+							src="dist/img/north america contour.png"
+							alt="contour map of North America"
+							class="continent-pick__contour continent-pick__contour--north-america" />
+						<a href="north-america.html"
+							><button
+								class="continent-pick__btn continent-pick__btn--north-america">
+								North America
+							</button></a
+						>
+					</div>
+					<div class="continent-pick__single-continent">
+						<img
+							src="dist/img/south america contour.png"
+							alt="contour map of South America"
+							class="continent-pick__contour continent-pick__contour--south-america" />
+						<a href="south-america.html"
+							><button
+								class="continent-pick__btn continent-pick__btn--south-america">
+								South America
+							</button></a
+						>
+					</div>
+					<div class="continent-pick__single-continent">
+						<img
+							src="dist/img/australia contour.png"
+							alt="contour map of Australia"
+							class="continent-pick__contour continent-pick__contour--australia" />
+						<a href="australia.html"
+							><button
+								class="continent-pick__btn continent-pick__btn--australia">
+								Australia
+							</button></a
+						>
+					</div>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

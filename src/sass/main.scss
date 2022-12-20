@@ -1,0 +1,837 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+:root {
+	--main-background-color: black;
+	--body-color: white;
+	--main-text: #eee;
+	--blue-btn: rgb(34, 136, 191);
+	--input-border: #eee;
+	--input-border-focus: #333;
+	--error-text: rgb(255, 94, 65);
+	--login-background: rgb(234, 234, 234);
+	--register-background: rgb(220, 220, 220);
+	--black-text: black;
+	--europe-text: rgb(255, 17, 120);
+	--asia-text: rgb(0, 65, 254);
+	--australia-text: rgb(1, 255, 244);
+	--africa-text: rgb(255, 242, 5);
+	--south-america-text: rgb(254, 0, 0);
+	--north-america-text: rgb(124, 255, 1);
+	--nav-btn: rgb(129, 129, 129);
+}
+body {
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.6rem;
+	background-color: var(--main-background-color);
+	color: var(--body-color);
+}
+.wrapper {
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+@keyframes movedown {
+	from {
+		transform: translateY(-100vh);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+@keyframes moveright {
+	from {
+		transform: translateX(-100vh);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+.nav-section {
+	&__home-btn,
+	&__prev-btn {
+		padding: 0.8em;
+		background: none;
+		border: none;
+		color: var(--nav-btn);
+		font-size: 2.5rem;
+		position: absolute;
+		top: 0;
+		z-index: 2000;
+		cursor: pointer;
+		&:hover {
+			color: var(--main-text);
+		}
+	}
+	&__home-btn {
+		right: 0;
+	}
+	&__prev-btn {
+		left: 0;
+	}
+}
+.hello-section {
+	width: 100%;
+	height: 100vh;
+	min-height: 550px;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+
+	&__img {
+		position: relative;
+		margin-bottom: 4em;
+		width: 40vh;
+		border: 1px solid black;
+		transform: translateY(-100vh);
+		animation: movedown 3s 0s ease-out forwards;
+		z-index: 300;
+	}
+
+	&__btn {
+		padding: 1em 3em;
+		font-family: "Montserrat", sans-serif;
+		border-radius: 15px;
+		background: linear-gradient(black, black) padding-box,
+			linear-gradient(to right, var(--blue-btn), darkorchid) border-box;
+		border: 1px solid transparent;
+		color: var(--blue-btn);
+		text-transform: uppercase;
+		cursor: pointer;
+		transition: background-color 0.3s, color 0.3s;
+
+		&:hover {
+			background: linear-gradient(to right, var(--blue-btn), darkorchid);
+			color: var(--main-background-color);
+			border: 1px solid black;
+		}
+		&:focus {
+			outline: none;
+			background: linear-gradient(to right, var(--blue-btn), darkorchid);
+			color: var(--main-background-color);
+			border: 1px solid black;
+		}
+		&--sign-in {
+			margin: 2em 0em;
+		}
+	}
+
+	&__button {
+		width: 100%;
+		display: flex;
+		justify-content: end;
+		align-items: center;
+	}
+	&__welcome-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		&--header {
+			font-size: 1.6rem;
+
+			font-weight: lighter;
+			span {
+				margin: 0.8em 0em 1em 0em;
+				font-size: 3rem;
+				font-weight: bolder;
+				color: var(--blue-btn);
+				font-family: "Rubik Mono One", sans-serif;
+			}
+		}
+		&--paragraph {
+			font-weight: lighter;
+			margin: 0em 2em 1em 2em;
+			font-size: 1.3rem;
+		}
+	}
+	&__fun-fact {
+		width: 100%;
+		position: relative;
+		padding: 1em 2em;
+		margin: 1em 0;
+		border: 1px solid var(--blue-btn);
+		border-radius: 15px;
+		display: none;
+		font-weight: lighter;
+		p {
+			font-size: 1.3rem;
+			line-height: 2rem;
+		}
+		&::before {
+			content: "Did you know that...";
+			position: absolute;
+			padding: 0 0.5em;
+			top: -0.7em;
+			left: 2em;
+			font-size: 1.3rem;
+			background-color: var(--main-background-color);
+			color: var(--blue-btn);
+			font-weight: 500;
+		}
+	}
+	&__popups {
+		display: none;
+	}
+}
+
+.login-popup__log-in-box,
+.register-popup__register-box {
+	input {
+		width: 100%;
+		margin: 0.2em 0.5em;
+		background: none;
+		padding: 0.2em;
+		border: none;
+		border-bottom: 1px solid var(--black-text);
+		font-size: 1.6rem;
+		color: var(--input-border-focus);
+		&:focus {
+			outline: none;
+			border-bottom: 1px solid var(--blue-btn);
+		}
+	}
+	label {
+		font-weight: 300;
+		color: var(--black-text);
+	}
+}
+.register-popup {
+	&__register-top-btn {
+		position: absolute;
+		top: -49px;
+		right: 0;
+		width: 50%;
+		height: 50px;
+		background-color: var(--register-background);
+		color: var(--black-text);
+		border: none;
+		border-radius: 0px 15px 0px 0px;
+		font-family: "Montserrat", sans-serif;
+		cursor: pointer;
+		font-size: 1.6rem;
+	}
+}
+.login-popup__log-in-box,
+.register-popup__register-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	height: 550px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 1em;
+	background-color: var(--register-background);
+	border-radius: 0px 0px 15px 15px;
+}
+.login-popup {
+	&__login-top-btn {
+		position: absolute;
+		top: -49px;
+		left: 0;
+		width: 50%;
+		height: 50px;
+		background-color: var(--login-background);
+		color: var(--black-text);
+		border: none;
+		border-radius: 15px 0px 0px 0px;
+		font-family: "Montserrat", sans-serif;
+		cursor: pointer;
+		font-size: 1.6rem;
+	}
+	&__log-in-box {
+		background-color: var(--login-background);
+		z-index: 500;
+	}
+	&__password,
+	&__login {
+		width: 90%;
+	}
+}
+
+.register-popup__error-text,
+.login-popup__error-text {
+	margin-bottom: 1em;
+	font-weight: 300;
+	font-size: 1.2rem;
+	color: var(--error-text);
+	visibility: hidden;
+}
+.register-popup__btn,
+.login-popup__btn {
+	margin: 0.5em 0.5em;
+	padding: 1em 2em;
+	font-family: "Montserrat", sans-serif;
+	border-radius: 15px;
+	background: none;
+	border: 1px solid var(--blue-btn);
+	color: var(--blue-btn);
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+
+	&:hover {
+		background-color: var(--blue-btn);
+		color: var(--main-background-color);
+	}
+	&:focus {
+		outline: none;
+		background-color: var(--blue-btn);
+		color: var(--main-background-color);
+	}
+}
+.register-popup {
+	&__register-box {
+		background-color: var(--register-background);
+		z-index: 400;
+	}
+	&__register-group {
+		width: 90%;
+	}
+
+	&__btns {
+		a {
+			pointer-events: none;
+			text-decoration: none;
+			button {
+				pointer-events: all;
+			}
+		}
+	}
+}
+.login-popup__password {
+	margin: 2em 0em;
+}
+
+.greeting-section {
+	padding: 2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	&__header {
+		margin-top: 4em;
+		font-weight: 300;
+		font-size: 3.5rem;
+	}
+}
+
+.continent-pick {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2em 2em 5em 2em;
+	&__single-continent {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&__header {
+		text-align: center;
+		font-weight: 300;
+		font-size: 1.8rem;
+	}
+	&__continent-box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		a {
+			width: 100%;
+		}
+	}
+	&__contour {
+		height: 200px;
+		margin: 5em 0 2em 0;
+	}
+	&__btn {
+		width: 100%;
+		padding: 1em 2em;
+		font-family: "Montserrat", sans-serif;
+		border-radius: 15px;
+		background: none;
+
+		text-transform: uppercase;
+		cursor: pointer;
+		font-weight: 700;
+		transition: background-color 0.3s, color 0.3s;
+		&:hover,
+		&:focus {
+			outline: none;
+			color: var(--main-background-color);
+		}
+
+		&--europe {
+			border: 2px solid var(--europe-text);
+			color: var(--europe-text);
+			&:hover,
+			&:focus {
+				background-color: var(--europe-text);
+			}
+		}
+		&--asia {
+			border: 2px solid var(--asia-text);
+			color: var(--asia-text);
+			&:hover,
+			&:focus {
+				background-color: var(--asia-text);
+			}
+		}
+		&--africa {
+			border: 2px solid var(--africa-text);
+			color: var(--africa-text);
+			&:hover,
+			&:focus {
+				background-color: var(--africa-text);
+			}
+		}
+		&--north-america {
+			border: 2px solid var(--north-america-text);
+			color: var(--north-america-text);
+			&:hover,
+			&:focus {
+				background-color: var(--north-america-text);
+			}
+		}
+		&--south-america {
+			border: 2px solid var(--south-america-text);
+			color: var(--south-america-text);
+			&:hover,
+			&:focus {
+				background-color: var(--south-america-text);
+			}
+		}
+		&--australia {
+			border: 2px solid var(--australia-text);
+			color: var(--australia-text);
+			&:hover,
+			&:focus {
+				background-color: var(--australia-text);
+			}
+		}
+	}
+}
+
+.pick-visited-countries {
+	display: flex;
+	flex-direction: column;
+	padding: 2em;
+	margin-top: 5em;
+	color: var(--main-text);
+	z-index: 300;
+
+	&__single-country {
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	&__header {
+		font-weight: 300;
+		text-align: center;
+		margin-bottom: 2em;
+		font-size: 1.8rem;
+	}
+	&__checkbox-box {
+		height: 60vh;
+		width: 100%;
+		padding: 0.5em 1em;
+		overflow: auto;
+		border-radius: 15px;
+		background-color: var(--main-background-color);
+		z-index: 300;
+
+		&--europe {
+			border: 1px solid var(--europe-text);
+			box-shadow: 0px 0px 20px var(--europe-text);
+		}
+		&--asia {
+			border: 1px solid var(--asia-text);
+			box-shadow: 0px 0px 20px var(--asia-text);
+		}
+		&--africa {
+			border: 1px solid var(--africa-text);
+			box-shadow: 0px 0px 20px var(--africa-text);
+		}
+		&--north-america {
+			border: 1px solid var(--north-america-text);
+			box-shadow: 0px 0px 20px var(--north-america-text);
+		}
+		&--south-america {
+			border: 1px solid var(--south-america-text);
+			box-shadow: 0px 0px 20px var(--south-america-text);
+		}
+		&--australia {
+			border: 1px solid var(--australia-text);
+			box-shadow: 0px 0px 20px var(--australia-text);
+		}
+
+		input {
+			margin: 1.3em 0.5em;
+		}
+	}
+	&__country {
+		font-weight: 300;
+	}
+}
+.visited-countries {
+	padding: 2em;
+	text-align: center;
+	z-index: 300;
+	&__summary {
+		font-weight: 300;
+	}
+	&__percentage {
+		display: block;
+		font-size: 3.5rem;
+		margin: 0.5em 0;
+		font-weight: normal;
+		&--europe {
+			color: var(--europe-text);
+		}
+		&--asia {
+			color: var(--asia-text);
+		}
+		&--africa {
+			color: var(--africa-text);
+		}
+		&--north-america {
+			color: var(--north-america-text);
+		}
+		&--south-america {
+			color: var(--south-america-text);
+		}
+		&--australia {
+			color: var(--australia-text);
+		}
+	}
+}
+.countries-wishlist {
+	padding: 2em;
+	text-align: center;
+	z-index: 300;
+
+	&__paragraph {
+		font-weight: 300;
+		font-size: 1.8rem;
+		line-height: 2.7rem;
+	}
+	&__input {
+		margin: 0.5em 0.5em;
+		background: none;
+		padding: 0.2em;
+		border: none;
+
+		font-size: 1.6rem;
+		width: 100%;
+		color: var(--main-text);
+		&:focus {
+			outline: none;
+			border-bottom: 1px solid var(--input-border);
+		}
+		&--europe {
+			border-bottom: 1px solid var(--europe-text);
+		}
+		&--asia {
+			border-bottom: 1px solid var(--asia-text);
+		}
+		&--africa {
+			border-bottom: 1px solid var(--africa-text);
+		}
+		&--north-america {
+			border-bottom: 1px solid var(--north-america-text);
+		}
+		&--south-america {
+			border-bottom: 1px solid var(--south-america-text);
+		}
+		&--australia {
+			border-bottom: 1px solid var(--australia-text);
+		}
+	}
+	&__error-text {
+		font-weight: 300;
+		font-size: 1.4rem;
+		visibility: hidden;
+	}
+	&__btn {
+		margin: 2em 0;
+		padding: 1em 2em;
+		font-family: "Montserrat", sans-serif;
+		border-radius: 15px;
+		background: none;
+		text-transform: uppercase;
+		cursor: pointer;
+		font-weight: 400;
+		transition: background-color 0.3s, color 0.3s;
+
+		&--europe {
+			border: 1px solid var(--europe-text);
+			color: var(--europe-text);
+			&:hover,
+			&:focus {
+				background-color: var(--europe-text);
+				color: var(--main-background-color);
+			}
+		}
+		&--asia {
+			border: 1px solid var(--asia-text);
+			color: var(--asia-text);
+			&:hover,
+			&:focus {
+				background-color: var(--asia-text);
+				color: var(--main-background-color);
+			}
+		}
+		&--africa {
+			border: 1px solid var(--africa-text);
+			color: var(--africa-text);
+			&:hover,
+			&:focus {
+				background-color: var(--africa-text);
+				color: var(--main-background-color);
+			}
+		}
+		&--north-america {
+			border: 1px solid var(--north-america-text);
+			color: var(--north-america-text);
+			&:hover,
+			&:focus {
+				background-color: var(--north-america-text);
+				color: var(--main-background-color);
+			}
+		}
+		&--south-america {
+			border: 1px solid var(--south-america-text);
+			color: var(--south-america-text);
+			&:hover,
+			&:focus {
+				background-color: var(--south-america-text);
+				color: var(--main-background-color);
+			}
+		}
+		&--australia {
+			border: 1px solid var(--australia-text);
+			color: var(--australia-text);
+			&:hover,
+			&:focus {
+				background-color: var(--australia-text);
+				color: var(--main-background-color);
+			}
+		}
+		&--antarctica {
+			border: 1px solid var(--antarctica-text);
+			color: var(--antarctica-text);
+			&:hover,
+			&:focus {
+				background-color: var(--antarctica-text);
+				color: var(--main-background-color);
+			}
+		}
+	}
+	&__list {
+		margin: 2em 0;
+		height: 20vh;
+		width: 100%;
+		padding: 0.5em 1em;
+		overflow: auto;
+
+		border-radius: 15px;
+
+		text-align: left;
+		background-color: var(--main-background-color);
+
+		input {
+			margin: 1.3em 0.5em;
+		}
+		&--europe {
+			border: 1px solid var(--europe-text);
+			box-shadow: 0px 0px 25px var(--europe-text);
+		}
+		&--asia {
+			border: 1px solid var(--asia-text);
+			box-shadow: 0px 0px 25px var(--asia-text);
+		}
+		&--africa {
+			border: 1px solid var(--africa-text);
+			box-shadow: 0px 0px 25px var(--africa-text);
+		}
+		&--north-america {
+			border: 1px solid var(--north-america-text);
+			box-shadow: 0px 0px 25px var(--north-america-text);
+		}
+		&--south-america {
+			border: 1px solid var(--south-america-text);
+			box-shadow: 0px 0px 25px var(--south-america-text);
+		}
+		&--australia {
+			border: 1px solid var(--australia-text);
+			box-shadow: 0px 0px 25px var(--australia-text);
+		}
+	}
+	&__country {
+		font-weight: 300;
+		text-transform: capitalize;
+	}
+
+	&__delete-btn {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		padding: 0.5em;
+		font-size: 1.6rem;
+		color: var(--main-text);
+		background: none;
+		border: none;
+		cursor: pointer;
+		i {
+			pointer-events: none;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.hello-section {
+		justify-content: space-between;
+		min-height: 960px;
+		padding: 2em 3em;
+		&__img {
+			margin-top: 4em;
+		}
+		&__fun-fact {
+			display: block;
+			margin-top: 4em;
+		}
+	}
+	.continent-pick {
+		&__continent-box {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		&__single-continent {
+			flex-direction: column;
+			justify-content: space-between;
+			width: 30%;
+			height: 350px;
+			margin: 1em 3.5em;
+		}
+	}
+	.login-popup__log-in-box,
+	.register-popup__register-box {
+		width: 70%;
+	}
+}
+@media (min-width: 992px) {
+	.nav-section {
+		&__home-btn,
+		&__prev-btn {
+			margin: 1em;
+			padding: 0.8em;
+		}
+	}
+	.hello-section {
+		padding: 15em 3em;
+		min-height: 100vh;
+		flex-direction: row;
+
+		&__img {
+			width: 45%;
+			transform: translateX(-100vw);
+			animation: moveright 3s 0s ease-out forwards;
+		}
+		&__welcome-text {
+			justify-content: center;
+
+			width: 50%;
+			height: 100%;
+			max-height: 550px;
+
+			span {
+				margin-top: 2em;
+				font-size: 4.5rem;
+			}
+		}
+		&__fun-fact {
+			width: 80%;
+		}
+	}
+	.continent-pick {
+		&__single-continent {
+			width: 25%;
+
+			margin: 1em 3em;
+		}
+		&__continent-box {
+			margin-bottom: 5em;
+		}
+		&__header {
+			margin: 3em 0;
+		}
+	}
+	.login-popup__log-in-box,
+	.register-popup__register-box {
+		width: 40%;
+	}
+	.main-box {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		background-image: url(../img/globe-big.jpg);
+		background-size: cover;
+		background-position: center;
+		margin-top: 8em;
+		padding: 2em;
+		margin-bottom: 4em;
+		border-radius: 20px;
+		overflow: hidden;
+		&::before {
+			content: "";
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: 0;
+			background-color: rgba(0, 0, 0, 0.85);
+		}
+	}
+	.pick-visited-countries {
+		width: 30vw;
+		margin-top: 0em;
+	}
+	.countries-wishlist {
+		width: 30vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+
+		&__input {
+			margin-top: 2em;
+		}
+		&__list {
+			margin: 2em;
+		}
+	}
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WorldMap</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Rubik+Mono+One&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="dist/css/main.min.css" />
+		<script
+			src="https://kit.fontawesome.com/a8199a168e.js"
+			crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<section class="hello-section">
+				<div class="hello-section__popups">
+					<div class="login-popup__log-in-box">
+						<button class="login-popup__login-top-btn">Log-in</button>
+						<div class="login-popup__login">
+							<label for="login">Login:</label>
+							<input
+								type="text"
+								id="login"
+								class="login-popup__login-input login-popup__login-input--login" />
+						</div>
+						<div class="login-popup__password">
+							<label for="password">Password:</label>
+							<input
+								type="password"
+								id="password"
+								class="login-popup__login-input login-popup__login-input--password" />
+						</div>
+						<p class="login-popup__error-text">Wrong e-mail or password</p>
+						<div class="login-popup__btns">
+							<a href="continents.html"
+								><button class="login-popup__btn login-popup__btn--login-btn">
+									Log in
+								</button></a
+							>
+							<button class="login-popup__btn login-popup__btn--cancel-btn">
+								Cancel
+							</button>
+						</div>
+					</div>
+					<div class="register-popup__register-box">
+						<button class="register-popup__register-top-btn">Register</button>
+						<div
+							class="register-popup__register-group register-popup__register-group--name">
+							<label for="name">Name:</label>
+							<input
+								type="text"
+								id="name"
+								class="register-popup__register-input register-popup__register-input--name" />
+							<p
+								class="register-popup__error-text register-popup__error-text--name">
+								Write your name
+							</p>
+						</div>
+						<div
+							class="register-popup__register-group register-popup__register-group--login">
+							<label for="register-login">Login:</label>
+							<input
+								type="text"
+								id="register-login"
+								class="register-popup__register-input register-popup__register-input--login" />
+							<p
+								class="register-popup__error-text register-popup__error-text--login">
+								Write your login
+							</p>
+						</div>
+						<div
+							class="register-popup__register-group register-popup__register-group--email">
+							<label for="register-email">E-mail:</label>
+							<input
+								type="email"
+								id="register-email"
+								class="register-popup__register-input register-popup__register-input--register-email" />
+							<p
+								class="register-popup__error-text register-popup__error-text--email">
+								Write your e-mail
+							</p>
+						</div>
+						<div
+							class="register-popup__register-group register-popup__register-group--password">
+							<label for="register-password">Password:</label>
+							<input
+								type="password"
+								id="register-password"
+								class="register-popup__register-input register-popup__register-input--password" />
+							<p
+								class="register-popup__error-text register-popup__error-text--password">
+								Write your password
+							</p>
+						</div>
+						<div
+							class="register-popup__register-group register-popup__register-group--repeat-password">
+							<label for="register-repeat-password">Repeat password:</label>
+							<input
+								type="password"
+								id="register-repeat-password"
+								class="register-popup__register-input register-popup__register-input--repeat-password" />
+							<p
+								class="register-popup__error-text register-popup__error-text--repeat-password">
+								Passwords do not match
+							</p>
+						</div>
+						<div class="register-popup__btns">
+							<a href="continents.html">
+								<button
+									class="register-popup__btn register-popup__btn--register-btn">
+									Register
+								</button>
+							</a>
+
+							<button
+								class="register-popup__btn register-popup__btn--cancel-btn">
+								Cancel
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<img class="hello-section__img" src="dist/img/world-small.png" alt="" />
+
+				<div class="hello-section__halo"></div>
+
+				<div class="hello-section__welcome-text">
+					<h1
+						class="hello-section__welcome-text hello-section__welcome-text--header">
+						welcome to <span>WorldMap</span>
+					</h1>
+					<p
+						class="hello-section__welcome-text hello-section__welcome-text--paragraph">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+						nulla.
+					</p>
+					<a href="#"
+						><button class="hello-section__btn hello-section__btn--sign-in">
+							sign in
+						</button></a
+					>
+
+					<div class="hello-section__fun-fact">
+						<p class="hello-section__fun-fact-paragraph">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+							libero voluptatibus, hic velit voluptatum accusamus.
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+		<script src="dist/js/login.min.js"></script>
+		<script src="dist/js/fun-fact.min.js"></script>
+	</body>
+</html>

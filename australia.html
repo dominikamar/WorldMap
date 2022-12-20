@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WorldMap</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Rubik+Mono+One&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="dist/css/main.min.css" />
+		<script
+			src="https://kit.fontawesome.com/a8199a168e.js"
+			crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<nav class="nav-section">
+	<a href="#" onclick="history.back();"
+		><button class="nav-section__prev-btn">
+			<i class="fa-solid fa-arrow-left"></i></button
+	></a>
+	<a href="index.html"
+		><button class="nav-section__home-btn">
+			<i class="fa-solid fa-house"></i></button
+	></a>
+</nav>
+
+			<div class="main-box">
+				<section class="pick-visited-countries">
+					<h3 class="pick-visited-countries__header">
+						Pick countries you have visited:
+					</h3>
+					<div
+						class="pick-visited-countries__checkbox-box pick-visited-countries__checkbox-box--australia">
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--australia">
+							<input
+								type="checkbox"
+								name="australia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="American Samoa" />
+							<span class="pick-visited-countries__country"
+								>American Samoa</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--australia">
+							<input
+								type="checkbox"
+								name="australia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Australia" />
+							<span class="pick-visited-countries__country">Australia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--australia">
+							<input
+								type="checkbox"
+								name="australia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Cook Islands" />
+							<span class="pick-visited-countries__country">Cook Islands</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--australia">
+							<input
+								type="checkbox"
+								name="australia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Fiji" />
+							<span class="pick-visited-countries__country">Fiji</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--australia">
+							<input
+								type="checkbox"
+								name="australia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="French Polynesia" />
+							<span class="pick-visited-countries__country"
+								>French Polynesia</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--australia">
+							<input
+								type="checkbox"
+								name="australia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Guam" />
+							<span class="pick-visited-countries__country">Guam</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--australia">
+							<input
+								type="checkbox"
+								name="australia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Kiribati" />
+							<span class="pick-visited-countries__country">Kiribati</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--australia">
+							<input
+								type="checkbox"
+								name="australia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Marshall Islands" />
+							<span class="pick-visited-countries__country"
+								>Marshall Islands</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--australia">
+							<input
+								type="checkbox"
+								name="australia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Micronesia" />
+							<span class="pick-visited-countries__country">Micronesia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--australia">
+							<input
+								type="checkbox"
+								name="australia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Nauru" />
+							<span class="pick-visited-countries__country">Nauru</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--australia">
+							<input
+								type="checkbox"
+								name="australia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="New Caledonia" />
+							<span class="pick-visited-countries__country">New Caledonia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--australia">
+							<input
+								type="checkbox"
+								name="australia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="New Zeland" />
+							<span class="pick-visited-countries__country">New Zeland</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--australia">
+							<input
+								type="checkbox"
+								name="australia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Niue" />
+							<span class="pick-visited-countries__country">Niue</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--australia">
+							<input
+								type="checkbox"
+								name="australia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Norfolk Islands" />
+							<span class="pick-visited-countries__country"
+								>Norfolk Islands</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--australia">
+							<input
+								type="checkbox"
+								name="australia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Northern Mariana Islands" />
+							<span class="pick-visited-countries__country"
+								>Northern Mariana Islands</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--australia">
+							<input
+								type="checkbox"
+								name="australia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Palau" />
+							<span class="pick-visited-countries__country">Palau</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--australia">
+							<input
+								type="checkbox"
+								name="australia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Papua New Guinea" />
+							<span class="pick-visited-countries__country"
+								>Papua New Guinea</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--australia">
+							<input
+								type="checkbox"
+								name="australia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Pitcairn Islands" />
+							<span class="pick-visited-countries__country"
+								>Pitcairn Islands</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--australia">
+							<input
+								type="checkbox"
+								name="australia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Tonga" />
+							<span class="pick-visited-countries__country">Tonga</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--australia">
+							<input
+								type="checkbox"
+								name="australia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Tokelau" />
+							<span class="pick-visited-countries__country">Tokelau</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--australia">
+							<input
+								type="checkbox"
+								name="australia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Tuvalu" />
+							<span class="pick-visited-countries__country">Tuvalu</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--australia">
+							<input
+								type="checkbox"
+								name="australia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Wake Island" />
+							<span class="pick-visited-countries__country">Wake Island</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--australia">
+							<input
+								type="checkbox"
+								name="australia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Wallis and Futuna" />
+							<span class="pick-visited-countries__country"
+								>Wallis and Futuna</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--australia">
+							<input
+								type="checkbox"
+								name="australia-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Vanuatu" />
+							<span class="pick-visited-countries__country">Vanuatu</span>
+						</div>
+					</div>
+				</section>
+				<section class="visited-countries">
+					<p class="visited-countries__summary">
+						So far you have visited
+						<span
+							class="visited-countries__percentage visited-countries__percentage--australia"
+							>0%</span
+						>
+						of Australian countries.
+					</p>
+				</section>
+				<section class="countries-wishlist">
+					<p class="countries-wishlist__paragraph">
+						What country would you like to visit next?
+					</p>
+					<input
+						type="text"
+						class="countries-wishlist__input countries-wishlist__input--australia" />
+					<p class="countries-wishlist__error-text">Write correct country</p>
+					<button
+						class="countries-wishlist__btn countries-wishlist__btn--australia">
+						Add to wishlist
+					</button>
+					<div
+						class="countries-wishlist__list countries-wishlist__list--australia"></div>
+				</section>
+			</div>
+		</div>
+		<script src="dist/js/continents.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WorldMap</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Rubik+Mono+One&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="dist/css/main.min.css" />
+		<script
+			src="https://kit.fontawesome.com/a8199a168e.js"
+			crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<!--@include "nav.kit"-->
+			<div class="main-box">
+				<section class="pick-visited-countries">
+					<h3 class="pick-visited-countries__header">
+						Pick countries you have visited:
+					</h3>
+					<div
+						class="pick-visited-countries__checkbox-box pick-visited-countries__checkbox-box--north-america">
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Anguilla" />
+
+							<span class="pick-visited-countries__country">Anguilla</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Antigua and Barbuda" />
+
+							<span class="pick-visited-countries__country"
+								>Antigua and Barbuda</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Aruba" />
+
+							<span class="pick-visited-countries__country">Aruba</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Bahamas" />
+
+							<span class="pick-visited-countries__country">Bahamas</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Barbados" />
+
+							<span class="pick-visited-countries__country">Barbados</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Belize" />
+
+							<span class="pick-visited-countries__country">Belize</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Bermuda" />
+
+							<span class="pick-visited-countries__country">Bermuda</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Bonaire" />
+
+							<span class="pick-visited-countries__country">Bonaire</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="British Virgin Islands" />
+
+							<span class="pick-visited-countries__country"
+								>British Virgin Islands</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Canada" />
+
+							<span class="pick-visited-countries__country">Canada</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Cayman Islands" />
+
+							<span class="pick-visited-countries__country"
+								>Cayman Islands</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Clipperton Islands" />
+
+							<span class="pick-visited-countries__country"
+								>Clipperton Islands</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Costa Rica" />
+
+							<span class="pick-visited-countries__country">Costa Rica</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Cuba" />
+
+							<span class="pick-visited-countries__country">Cuba</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Curacao" />
+
+							<span class="pick-visited-countries__country">Curacao</span>
+						</div>
+
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Dominica" />
+
+							<span class="pick-visited-countries__country">Dominica</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Dominican Republic" />
+
+							<span class="pick-visited-countries__country"
+								>Dominican Republic</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="EL Salvador" />
+
+							<span class="pick-visited-countries__country">EL Salvador</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Greenland" />
+
+							<span class="pick-visited-countries__country">Greenland</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Grenada" />
+
+							<span class="pick-visited-countries__country">Grenada</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Guadeloupe" />
+
+							<span class="pick-visited-countries__country">Guadeloupe</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Guatemala" />
+
+							<span class="pick-visited-countries__country">Guatemala</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Haiti" />
+
+							<span class="pick-visited-countries__country">Haiti</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Honduras" />
+
+							<span class="pick-visited-countries__country">Honduras</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Jamaica" />
+
+							<span class="pick-visited-countries__country">Jamaica</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Martinique" />
+
+							<span class="pick-visited-countries__country">Martinique</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Mexico" />
+
+							<span class="pick-visited-countries__country">Mexico</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Montserrat" />
+
+							<span class="pick-visited-countries__country">Montserrat</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Navassa Island" />
+
+							<span class="pick-visited-countries__country"
+								>Navassa Island</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Nicaragua" />
+
+							<span class="pick-visited-countries__country">Nicaragua</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Panama" />
+
+							<span class="pick-visited-countries__country">Panama</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Puerto Rico" />
+
+							<span class="pick-visited-countries__country">Puerto Rico</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Saba" />
+
+							<span class="pick-visited-countries__country">Saba</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Saint Barthelemy" />
+
+							<span class="pick-visited-countries__country"
+								>Saint Barthelemy</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Saint Kitts and Nevis" />
+
+							<span class="pick-visited-countries__country"
+								>Saint Kitts and Nevis</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Saint Lucia" />
+
+							<span class="pick-visited-countries__country">Saint Lucia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Saint Martin" />
+
+							<span class="pick-visited-countries__country">Saint Martin</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Saint Pierre and Miquelon" />
+
+							<span class="pick-visited-countries__country"
+								>Saint Pierre and Miquelon</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Saint Vincent and the Grenadines" />
+
+							<span class="pick-visited-countries__country"
+								>Saint Vincent and the Grenadines</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Sint Eustatius" />
+
+							<span class="pick-visited-countries__country"
+								>Sint Eustatius</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Sint Maarten" />
+
+							<span class="pick-visited-countries__country">Sint Maarten</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Trinidad and Tobago" />
+
+							<span class="pick-visited-countries__country"
+								>Trinidad and Tobago</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Trinidad and Tobago" />
+
+							<span class="pick-visited-countries__country"
+								>Turks and Caicos Islands</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="United States of America" />
+
+							<span class="pick-visited-countries__country"
+								>United States of America</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--north-america">
+							<input
+								type="checkbox"
+								name="north-america-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="US Virgin Islands" />
+
+							<span class="pick-visited-countries__country"
+								>US Virgin Islands</span
+							>
+						</div>
+					</div>
+				</section>
+				<section class="visited-countries">
+					<p class="visited-countries__summary">
+						So far you have visited
+						<span
+							class="visited-countries__percentage visited-countries__percentage--north-america"
+							>0%</span
+						>
+						of North-American countries.
+					</p>
+				</section>
+				<section class="countries-wishlist">
+					<p class="countries-wishlist__paragraph">
+						What country would you like to visit next?
+					</p>
+					<input
+						type="text"
+						class="countries-wishlist__input countries-wishlist__input--north-america" />
+					<p class="countries-wishlist__error-text">Write correct country</p>
+					<button
+						class="countries-wishlist__btn countries-wishlist__btn--north-america">
+						Add to wishlist
+					</button>
+					<div
+						class="countries-wishlist__list countries-wishlist__list--north-america"></div>
+				</section>
+			</div>
+		</div>
+		<script src="dist/js/continents.min.js"></script>
+	</body>
+</html>

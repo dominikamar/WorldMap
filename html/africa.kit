@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WorldMap</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Rubik+Mono+One&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="dist/css/main.min.css" />
+		<script
+			src="https://kit.fontawesome.com/a8199a168e.js"
+			crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<!--@include "nav.kit"-->
+			<div class="main-box">
+				<section class="pick-visited-countries">
+					<h3 class="pick-visited-countries__header">
+						Pick countries you have visited:
+					</h3>
+					<div
+						class="pick-visited-countries__checkbox-box pick-visited-countries__checkbox-box--africa">
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Algeria" />
+							<span class="pick-visited-countries__country">Algeria</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Angola" />
+							<span class="pick-visited-countries__country">Angola</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Benin" />
+							<span class="pick-visited-countries__country">Benin</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Botswana" />
+							<span class="pick-visited-countries__country">Botswana</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Burkina Faso" />
+							<span class="pick-visited-countries__country">Burkina Faso</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Burundi" />
+							<span class="pick-visited-countries__country">Burundi</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Cameroon" />
+							<span class="pick-visited-countries__country">Cameroon</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Cape Verde" />
+							<span class="pick-visited-countries__country">Cape Verde</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Central African Republic" />
+							<span class="pick-visited-countries__country"
+								>Central African Republic</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Chad" />
+							<span class="pick-visited-countries__country">Chad</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Comoros" />
+							<span class="pick-visited-countries__country">Comoros</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Congo" />
+							<span class="pick-visited-countries__country">Congo</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Democratic Republic of the Congo" />
+							<span class="pick-visited-countries__country"
+								>Democratic Republic of the Congo</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Republic of the Cote d'Ivoire" />
+							<span class="pick-visited-countries__country"
+								>Republic of the Cote d'Ivoire</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Djibouti" />
+							<span class="pick-visited-countries__country">Djibouti</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Egypt" />
+							<span class="pick-visited-countries__country">Egypt</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Equatorial Guinea" />
+							<span class="pick-visited-countries__country"
+								>Equatorial Guinea</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Eritrea" />
+							<span class="pick-visited-countries__country">Eritrea</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Eswatini" />
+							<span class="pick-visited-countries__country">Eswatini</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Ethiopia" />
+							<span class="pick-visited-countries__country">Ethiopia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Gabon" />
+							<span class="pick-visited-countries__country">Gabon</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Gambia" />
+							<span class="pick-visited-countries__country">Gambia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Ghana" />
+							<span class="pick-visited-countries__country">Ghana</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Guinea" />
+							<span class="pick-visited-countries__country">Guinea</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Guinea-Bissau" />
+							<span class="pick-visited-countries__country">Guinea-Bissau</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Kenya" />
+							<span class="pick-visited-countries__country">Kenya</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Lesotho" />
+							<span class="pick-visited-countries__country">Lesotho</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Liberia" />
+							<span class="pick-visited-countries__country">Liberia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Libya" />
+							<span class="pick-visited-countries__country">Libya</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Madagascar" />
+							<span class="pick-visited-countries__country">Madagascar</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Malawi" />
+							<span class="pick-visited-countries__country">Malawi</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Mali" />
+							<span class="pick-visited-countries__country">Mali</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Mauritania" />
+							<span class="pick-visited-countries__country">Mauritania</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Mauritius" />
+							<span class="pick-visited-countries__country">Mauritius</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Morocco" />
+							<span class="pick-visited-countries__country">Morocco</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Mozambique" />
+							<span class="pick-visited-countries__country">Mozambique</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Namibia" />
+							<span class="pick-visited-countries__country">Namibia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Niger" />
+							<span class="pick-visited-countries__country">Niger</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Nigeria" />
+							<span class="pick-visited-countries__country">Nigeria</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Rwanda" />
+							<span class="pick-visited-countries__country">Rwanda</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Sao Tome and Principe" />
+							<span class="pick-visited-countries__country"
+								>Sao Tome and Principe</span
+							>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Senegal" />
+							<span class="pick-visited-countries__country">Senegal</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Seychelles" />
+							<span class="pick-visited-countries__country">Seychelles</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Sierra Leone" />
+							<span class="pick-visited-countries__country">Sierra Leone</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Somalia" />
+							<span class="pick-visited-countries__country">Somalia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="South Africa" />
+							<span class="pick-visited-countries__country">South Africa</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="South Sudan" />
+							<span class="pick-visited-countries__country">South Sudan</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Sudan" />
+							<span class="pick-visited-countries__country">Sudan</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Tanzania" />
+							<span class="pick-visited-countries__country">Tanzania</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Togo" />
+							<span class="pick-visited-countries__country">Togo</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Tunisia" />
+							<span class="pick-visited-countries__country">Tunisia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Uganda" />
+							<span class="pick-visited-countries__country">Uganda</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Zambia" />
+							<span class="pick-visited-countries__country">Zambia</span>
+						</div>
+						<div
+							class="pick-visited-countries__single-country pick-visited-countries__single-country--africa">
+							<input
+								type="checkbox"
+								name="africa-country"
+								class="pick-visited-countries__checkbox"
+								onclick="checkCountries()"
+								value="Zimbabwe" />
+							<span class="pick-visited-countries__country">Zimbabwe</span>
+						</div>
+					</div>
+				</section>
+				<section class="visited-countries">
+					<p class="visited-countries__summary">
+						So far you have visited
+						<span
+							class="visited-countries__percentage visited-countries__percentage--africa"
+							>0%</span
+						>
+						of African countries.
+					</p>
+				</section>
+				<section class="countries-wishlist">
+					<p class="countries-wishlist__paragraph">
+						What country would you like to visit next?
+					</p>
+					<input
+						type="text"
+						class="countries-wishlist__input countries-wishlist__input--africa" />
+					<p class="countries-wishlist__error-text">Write correct country</p>
+					<button
+						class="countries-wishlist__btn countries-wishlist__btn--africa">
+						Add to wishlist
+					</button>
+					<div
+						class="countries-wishlist__list countries-wishlist__list--africa"></div>
+				</section>
+			</div>
+		</div>
+		<script src="dist/js/continents.min.js"></script>
+	</body>
+</html>
